@@ -8,6 +8,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import com.example.demo.model.Student;
 import com.example.demo.model.TheClass;
 
 /**
@@ -17,4 +18,5 @@ import com.example.demo.model.TheClass;
 @Repository
 public interface TheClassRepository extends JpaRepository<TheClass, String> {
 	public List<TheClass> findByClassId(String classId);
+	public List<TheClass> findByClassNameContaining(String studentName);
 }

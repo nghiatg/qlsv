@@ -30,7 +30,7 @@ public class TheClass {
 	@Column(name = "TenLop")
 	private String className;
 
-	@OneToMany(mappedBy = "theClass", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "theClass",cascade=CascadeType.ALL)
 	private List<Student> allStudents;
 
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -66,6 +66,15 @@ public class TheClass {
 		this.classId = classId;
 		this.className = className;
 		this.allStudents = allStudents;
+		this.course = course;
+		this.department = department;
+		this.eduSystem = eduSystem;
+	}
+
+	public TheClass(String classId, String className, Course course, Department department, EducationSystem eduSystem) {
+		super();
+		this.classId = classId;
+		this.className = className;
 		this.course = course;
 		this.department = department;
 		this.eduSystem = eduSystem;

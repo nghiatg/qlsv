@@ -27,7 +27,7 @@ public class Course {
 	@Column(name = "TenKhoaHoc")
 	private String courseName;
 
-	@OneToMany(mappedBy = "course", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "course", cascade=CascadeType.ALL)
 	private List<TheClass> classes;
 
 	/**
@@ -42,11 +42,10 @@ public class Course {
 	 * @param courseName
 	 * @param classes
 	 */
-	public Course(String courseId, String courseName, List<TheClass> classes) {
+	public Course(String courseId, String courseName) {
 		super();
 		this.courseId = courseId;
 		this.courseName = courseName;
-		this.classes = classes;
 	}
 
 	/**

@@ -17,5 +17,10 @@ public interface StudentService {
 	public boolean addOrUpdateStudent(String studentId, String studentName, boolean studentGender, String dateOfBirth,
 			String placeOfBirth, String classId);
 	
+	public boolean deleteStudent(String studentId);
+	
+	public List<Student> getStudentsByName(String studentName);
+	
+	
 
 }

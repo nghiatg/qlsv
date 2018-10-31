@@ -18,6 +18,8 @@ import com.example.demo.repository.StudentRepository;
  */
 @Service
 public class StudentServiceImpl implements StudentService {
+	
+
 	@Autowired
 	private StudentRepository studentRepository;
 	@Autowired
@@ -49,6 +51,25 @@ public class StudentServiceImpl implements StudentService {
 		return false;
 	}
 	
+	@Override
+	public boolean deleteStudent(String studentId) {
+		Student student = studentRepository.findByStudentId(studentId).get(0);
+		try{
+			studentRepository.delete(student);
+			return true;
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	/* (non-Javadoc)
+	 * @see com.example.demo.service.StudentService#getStudentsByName(java.lang.String)
+	 */
+	@Override
+	public List<Student> getStudentsByName(String studentName) {
+		return studentRepository.findByStudentNameContaining(studentName);
+	}
 	
 
 }

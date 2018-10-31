@@ -1,0 +1,136 @@
+.ss{
+	width: 100%;
+	height: 100%;
+	top: 15px;
+	position: fixed;
+	text-align: center;
+	background-image: url(../img/1.jpg);
+	filter: blur(100px);
+	-webkit-filter: blur(100px);
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.maintable{
+	top:10%;
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+.row{
+	top: 80px;
+	width: 1200px;
+	position: relative;
+	left: 51%;
+	transform: translateX(-50%);
+} 
+#insert{
+	float: left;
+	background: #1fc727;
+	width: 150px;
+  	position: relative;
+  
+}
+.search-box {
+	position: relative;        
+	right: 5px;
+	float: right;
+}
+.search-box input {
+	height: 34px;
+	border-radius: 20px;
+	padding-left: 35px;
+	border-color: #ddd;
+	box-shadow: none;
+}
+.search-box input:focus {
+	border-color: #3FBAE4;
+}
+
+.search-box i {
+	color: #a0a5b1;
+	position: absolute;
+	font-size: 19px;
+	top: 8px;
+	left: 10px;
+}
+
+
+#tableStudent {  
+	border-collapse: collapse;
+	vertical-align: center;	
+	top: 100px;
+	width: 1200px;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	border: 1px solid rgb(156, 156, 156);
+	position: relative;
+	left: 50%;
+    transform: translateX(-50%)
+	
+}
+
+tr {
+	/* border-collapse: collapse; */
+    
+	text-align:center;
+	border: 1px solid rgb(156, 156, 156);
+	vertical-align: center;		
+}
+th {
+	/* border-collapse: collapse; */
+    
+	background:#0775d3;
+	height: 45px;
+	vertical-align: center;	
+	font-size: 15px;
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(156, 156, 156);
+	
+}
+
+
+
+td{
+	border-collapse: collapse;
+   
+	text-align:center;
+	border: 1px solid rgb(156, 156, 156);
+	vertical-align: center;		
+}
+ 
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: rgb(138, 135, 135)}	
+ 
+/* #wrapper {width: 100%; margin-top: 0px; }
+#header {width: 72%; background: #0775d3; margin-top: 0px; padding:15px 0px 15px 0px;}
+#header h2 {width: 100%; margin:auto; color: #FFFFFF;}
+#container {width: 100%; margin:auto}
+#container h3 {color: #000;}
+#container #content {margin-top: 20px;} */
+
+/* .add-student-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+	
+	margin-bottom: 15px;
+	background: #cccccc;
+} */
+
+#dbtn{
+	background: #c71f1f;
+	
+}
+
+.tableStudent{
+	margin-top: 50px;
+	
+}
